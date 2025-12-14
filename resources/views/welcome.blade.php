@@ -11,6 +11,6 @@
     <a href="" class="btn">
         Find Ninjas!
     </a>
-    <button></button>
+    
 </body>
 </html>
