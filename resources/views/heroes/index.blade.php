@@ -8,21 +8,13 @@
     <h1>{{$greeting}}</h1>
     <h2>Currently Available Heroes</h2>
     <ul>
-        <li>
-            <a href="/heroes/{{$heroes[0]['id']}}">
-                {{$heroes[0]['name']}} 
-            </a>
-        </li>
-        <li>
-            <a href="/heroes/{{$heroes[1]['id']}}">
-                {{$heroes[1]['name']}} 
-            </a>
-        </li>
-        <li>
-            <a href="/heroes/{{$heroes[2]['id']}}">
-                {{$heroes[2]['name']}}  
-            </a>
-        </li>
+       @foreach ($heroes as $hero) <!--blade directive for looping through heroes-->
+            <li>
+                <p>{{$hero['name']}}</p>
+                <a href="/heroes/{{$hero['id']}}">View Details</a> <!--link to hero details page-->
+            </li>
+           
+       @endforeach
     </ul>
 
 </body>
