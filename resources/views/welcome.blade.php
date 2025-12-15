@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> <!-- Dynamically sets the language attribute based on the application's locale-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
 <body>
     <h1>Welcome to Laravel Practice</h1>
     <p>Click the button below to view the list of ninjas</p>
-    <a href="" class="btn">
-        Find Ninjas!
+    <a href="/heroes" class="btn">
+        Find Heroes!
     </a>
     
 </body>
