@@ -22,7 +22,7 @@ Route::get('/heroes', function () {
 });
 
 // Dynamic route to show individual hero details
-Route::get('/heroes/{id}', function ($id) {
+Route::get('/heroes/{id}', function ($id) { //wildcard route parameter
     // In a real application, you would fetch the hero from a database
     return view('heroes.show', ['id' => $id]); //heroes/show.blade.php
 });
