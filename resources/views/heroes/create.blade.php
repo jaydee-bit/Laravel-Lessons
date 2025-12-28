@@ -4,7 +4,7 @@
         @csrf
         <label for="name">Hero Name:</label>
         <input type="text" id="name" name="name" required>
-        <button type="submit">Create Hero</button>
+        <button class="btn" type="submit">Create Hero</button>
     </form>
 
-</x-layout>    
+</x-layout>
