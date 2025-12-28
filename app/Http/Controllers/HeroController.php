@@ -11,7 +11,8 @@ class HeroController extends Controller
     {
         //route --> /heroes/
         //fetch all records & pass to index view
-        $heroes = Hero::orderBy('created_at', 'desc')->get(); //fetch all heroes from database
+        $heroes = Hero::orderBy('created_at', 'desc')->paginate(10); //fetch all heroes from database
+        //paginate results, 10 per page
         return view('heroes.index', ['heroes' => $heroes]);
     }
 

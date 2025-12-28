@@ -14,4 +14,6 @@
             </li>
         @endforeach
     </ul>
+
+    {{ $heroes->links() }} <!--pagination links. this will generate pagination links previous/next-->
 </x-layout>
